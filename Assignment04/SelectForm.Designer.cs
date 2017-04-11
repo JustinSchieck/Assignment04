@@ -120,7 +120,7 @@
             this.CompDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.CompDataGridView.Size = new System.Drawing.Size(875, 396);
             this.CompDataGridView.TabIndex = 6;
-            this.CompDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CompDataGridView_CellContentClick);
+            this.CompDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this._CompDataGridView_CellContentClick);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -358,7 +358,7 @@
             this.NextButton.TabIndex = 11;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            this.NextButton.Click += new System.EventHandler(this._NextButton_Click);
             // 
             // CancelButton
             // 
@@ -368,7 +368,7 @@
             this.CancelButton.TabIndex = 10;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            this.CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
             // 
             // ChoiceTextBox
             // 
@@ -404,6 +404,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 509);
+            this.ControlBox = false;
             this.Controls.Add(this.CompDataGridView);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.CancelButton);
@@ -411,8 +412,9 @@
             this.Controls.Add(this.ChoiceLabel);
             this.Controls.Add(this.SelectFormLabel);
             this.Name = "SelectForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelectForm";
-            this.Load += new System.EventHandler(this.SelectForm_Load);
+            this.Load += new System.EventHandler(this._SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CompDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).EndInit();

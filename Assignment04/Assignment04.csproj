@@ -119,6 +119,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SelectForm.resx">
       <DependentUpon>SelectForm.cs</DependentUpon>
@@ -153,6 +154,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CybertronPC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gateway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iBUYPOWER.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lenovo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toshiba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apple.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -68,7 +68,7 @@
             this.PlatformTextbox = new System.Windows.Forms.TextBox();
             this.ManufacturerTextbox = new System.Windows.Forms.TextBox();
             this.ConditionTextbox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.SelectedPictureBox = new System.Windows.Forms.PictureBox();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,7 +80,7 @@
             this.PriceGroupBox.SuspendLayout();
             this.SystemGroupBox2.SuspendLayout();
             this.SystemGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectedPictureBox)).BeginInit();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -477,13 +477,14 @@
             this.ConditionTextbox.Size = new System.Drawing.Size(146, 22);
             this.ConditionTextbox.TabIndex = 0;
             // 
-            // pictureBox1
+            // SelectedPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(653, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(253, 196);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.SelectedPictureBox.Location = new System.Drawing.Point(653, 83);
+            this.SelectedPictureBox.Name = "SelectedPictureBox";
+            this.SelectedPictureBox.Size = new System.Drawing.Size(253, 196);
+            this.SelectedPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.SelectedPictureBox.TabIndex = 9;
+            this.SelectedPictureBox.TabStop = false;
             // 
             // MenuStrip
             // 
@@ -562,17 +563,19 @@
             this.Controls.Add(this.PriceGroupBox);
             this.Controls.Add(this.SystemGroupBox2);
             this.Controls.Add(this.SystemGroupBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.SelectedPictureBox);
             this.Controls.Add(this.MenuStrip);
             this.Name = "OrderForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
+            this.Load += new System.EventHandler(this._OrderForm_Load);
             this.PriceGroupBox.ResumeLayout(false);
             this.PriceGroupBox.PerformLayout();
             this.SystemGroupBox2.ResumeLayout(false);
             this.SystemGroupBox2.PerformLayout();
             this.SystemGroupBox.ResumeLayout(false);
             this.SystemGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectedPictureBox)).EndInit();
             this.MenuStrip.ResumeLayout(false);
             this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -622,7 +625,7 @@
         private System.Windows.Forms.TextBox PlatformTextbox;
         private System.Windows.Forms.TextBox ManufacturerTextbox;
         private System.Windows.Forms.TextBox ConditionTextbox;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox SelectedPictureBox;
         private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;

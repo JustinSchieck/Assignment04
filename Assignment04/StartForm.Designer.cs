@@ -92,12 +92,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 472);
+            this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.SavedOrderButton);
             this.Controls.Add(this.NewOrderButton);
             this.Controls.Add(this.CoinPictureBox);
             this.Name = "StartForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";
             ((System.ComponentModel.ISupportInitialize)(this.CoinPictureBox)).EndInit();
             this.ResumeLayout(false);

@@ -28,8 +28,9 @@ namespace Assignment04
         {
             InitializeComponent();
 
-
         }
+
+
         /// <summary>
         /// fills textboxs in form on loading the form
         /// </summary>
@@ -58,6 +59,9 @@ namespace Assignment04
             double Tax = Subtotal * 0.13;
             SalesTaxTextbox.Text = Tax.ToString();
             TotalTextbox.Text = (Subtotal * 1.13).ToString();
+
+            _FillImage();
+
         }
 
         //exits form
@@ -115,8 +119,42 @@ namespace Assignment04
             PriceTextbox.Text = Program.ChosenProduct.cost.ToString();
             double Subtotal = Convert.ToDouble(Program.ChosenProduct.cost);
             double Tax = Subtotal * 0.13;
-            SalesTaxTextbox.Text = Tax.ToString();
-            TotalTextbox.Text = (Subtotal * 1.13).ToString();
+            SalesTaxTextbox.Text = Tax.ToString("C2");
+            TotalTextbox.Text = (Subtotal * 1.13).ToString("C2");
+        }
+
+        private void _FillImage()
+        {
+            switch (ManufacturerTextbox.Text)
+            {
+                case "Asus ":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.asus;
+                    break;
+                case "Acer":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.acer;
+                    break;
+                case "Toshiba ":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.toshiba;
+                    break;
+                case "Apple":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.apple;
+                    break;
+                case "iBUYPOWER":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.iBUYPOWER;
+                    break;
+                case "Gateway ":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.gateway;
+                    break;
+                case "CybertronPC":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.CybertronPC;
+                    break;
+                case "Lenovo ":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.lenovo;
+                    break;
+                case "HP ":
+                    SelectedPictureBox.BackgroundImage = Properties.Resources.hp;
+                    break;
+            }
         }
     }
 }

@@ -62,12 +62,13 @@ namespace Assignment04
             CPUTypeTextbox.Text = Program.ChosenProduct.CPU_type;
             CPUSpeedTextbox.Text = Program.ChosenProduct.CPU_speed;
             WebcamTextbox.Text = Program.ChosenProduct.webcam;
+
         }
 
 
         private void _AnoutherProductButton_Click(object sender, EventArgs e)
         {
-            this.PreviousForm.Show();
+            PreviousForm.Show();
             this.Close();
         }
 
@@ -177,9 +178,9 @@ namespace Assignment04
 
         private void _StoreInfo()
         {
-          //  Program.ChosenProduct.productID = Convert.ToInt16(ProductIDTextbox.Text);
+            Program.ChosenProduct.productID = Convert.ToInt16(ProductIDTextbox.Text);
             Program.ChosenProduct.condition = ConditionTextbox.Text;
-          //  Program.ChosenProduct.cost = Convert.ToDecimal(CostTextbox.Text);
+            Program.ChosenProduct.cost = Convert.ToDecimal(CostTextbox.Text);
             Program.ChosenProduct.platform = PlatformTextBox.Text;
             Program.ChosenProduct.manufacturer = ManufactuerTextbox.Text;
             Program.ChosenProduct.OS = OSTextbox.Text;
@@ -193,6 +194,8 @@ namespace Assignment04
             Program.ChosenProduct.CPU_type = CPUTypeTextbox.Text;
             Program.ChosenProduct.CPU_speed = CPUSpeedTextbox.Text;
             Program.ChosenProduct.webcam = WebcamTextbox.Text;
+
+
         }
 
         private void _CancelButton_Click(object sender, EventArgs e)

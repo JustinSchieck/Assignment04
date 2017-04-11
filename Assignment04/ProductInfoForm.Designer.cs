@@ -513,6 +513,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 585);
+            this.ControlBox = false;
             this.Controls.Add(this.CostTextbox);
             this.Controls.Add(this.ConditionTextbox);
             this.Controls.Add(this.ProductIDTextbox);
@@ -527,7 +528,9 @@
             this.Controls.Add(this.ProductInfoGroupBox);
             this.Controls.Add(this.menuStrip1);
             this.Name = "ProductInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
+            this.Load += new System.EventHandler(this._ProductInfoForm_Load);
             this.TechSpecsGroupBox.ResumeLayout(false);
             this.TechSpecsGroupBox.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
