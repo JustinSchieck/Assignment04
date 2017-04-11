@@ -21,7 +21,7 @@ namespace Assignment04
         {
             StartForm startForm = new StartForm();
 
-            this.SplashTimer.Enabled = false;
+            this.SplashFormTimer.Enabled = false;
             startForm.Show();
             Hide();
         }

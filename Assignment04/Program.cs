@@ -8,6 +8,8 @@ namespace Assignment04
 {
     static class Program
     {
+
+        public static product ChosenProduct;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

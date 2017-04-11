@@ -140,6 +140,7 @@
             this.NextButton.TabIndex = 18;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this._NextButton_Click);
             // 
             // CancelButton
             // 
@@ -149,6 +150,7 @@
             this.CancelButton.TabIndex = 17;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
             // 
             // AnoutherProductButton
             // 
@@ -158,6 +160,7 @@
             this.AnoutherProductButton.TabIndex = 16;
             this.AnoutherProductButton.Text = "Select Another Product";
             this.AnoutherProductButton.UseVisualStyleBackColor = true;
+            this.AnoutherProductButton.Click += new System.EventHandler(this._AnoutherProductButton_Click);
             // 
             // SelectionLabel
             // 
@@ -472,20 +475,23 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this._openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this._saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(120, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this._CancelButton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -500,6 +506,7 @@
             this.selectAnoutherProductToolStripMenuItem.Name = "selectAnoutherProductToolStripMenuItem";
             this.selectAnoutherProductToolStripMenuItem.Size = new System.Drawing.Size(244, 26);
             this.selectAnoutherProductToolStripMenuItem.Text = "Se&lect Anouther Product";
+            this.selectAnoutherProductToolStripMenuItem.Click += new System.EventHandler(this._AnoutherProductButton_Click);
             // 
             // ProductInfoForm
             // 

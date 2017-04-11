@@ -55,6 +55,7 @@
             this.CancelButton.TabIndex = 8;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this._CancelButton_Click);
             // 
             // SavedOrderButton
             // 
@@ -64,6 +65,7 @@
             this.SavedOrderButton.TabIndex = 7;
             this.SavedOrderButton.Text = "Open Saved Order";
             this.SavedOrderButton.UseVisualStyleBackColor = true;
+            this.SavedOrderButton.Click += new System.EventHandler(this._SavedOrderButton_Click);
             // 
             // NewOrderButton
             // 
@@ -73,6 +75,7 @@
             this.NewOrderButton.TabIndex = 6;
             this.NewOrderButton.Text = "Start New Order";
             this.NewOrderButton.UseVisualStyleBackColor = true;
+            this.NewOrderButton.Click += new System.EventHandler(this._NewOrderButton_Click);
             // 
             // CoinPictureBox
             // 
